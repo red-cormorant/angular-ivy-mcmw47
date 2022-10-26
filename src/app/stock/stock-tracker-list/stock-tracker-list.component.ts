@@ -12,4 +12,6 @@ export class StockTrackerListComponent implements OnInit {
   ngOnInit() {
   }
 
+  public trackSymbol
+
 }
