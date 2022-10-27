@@ -2,16 +2,18 @@
   <h4>Enter the symbol of a stock to track(i.e. APPL, TSLA, GOOGL)</h4>
 </div>
 <div>
-  <input
-    type="text"
-    id="stockInput"
-    name="stockInput"
-    class="form-control"
-    required
-    minlength="1"
-    maxlength="5"
-    [(ngModel)]="stock"
-    #stock="ngModel"
-  />
+  <form #stockForm="ngForm">
+    <input
+      type="text"
+      id="stockInput"
+      name="stockInput"
+      class="form-control"
+      required
+      minlength="1"
+      maxlength="5"
+      [(ngModel)]="stock"
+      #stock="ngModel"
+    />
+  </form>
   <button id="trackBtn" (click)="trackSymbol(stock.id)">Track Stock</button>
 </div>
