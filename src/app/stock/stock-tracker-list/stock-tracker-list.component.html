@@ -10,8 +10,8 @@
     required
     minlength="1"
     maxlength="5"
-    [(ngModel)]="stockInput.id"
-    #stockInputId="ngModel"
+    [(ngModel)]="stock"
+    #stock="ngModel"
   />
-  <button id="trackBtn" (click)="trackSymbol()">Track Stock</button>
+  <button id="trackBtn" (click)="trackSymbol(stock.id)">Track Stock</button>
 </div>
